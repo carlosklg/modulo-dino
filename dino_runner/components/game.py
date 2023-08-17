@@ -83,7 +83,7 @@ class Game:
 
     def draw(self):
         self.clock.tick(FPS)
-        self.screen.fill((255, 255, 255)) # "#FFFFFF"
+        self.screen.fill((200, 255, 255)) # "#FFFFFF"
         self.draw_background()
         self.player.draw(self.screen)
         self.obstacle_manager.draw(self.screen)
@@ -140,7 +140,7 @@ class Game:
         half_screen_width = SCREEN_WIDTH // 2
 
         if self.death_count == 0:
-           draw_message_component("Press any key to start", self.screen)
+           draw_message_component("Aperte Qualquer Tecla", self.screen)
         else:
             draw_message_component("tente novamente :)", self.screen,
                                     pos_y_center=half_screen_height + 140)
